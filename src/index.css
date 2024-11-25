@@ -1,3 +1,10 @@
+@import '@fontsource/fira-code/400.css'; /* Regular weight */
+@import '@fontsource/fira-code/700.css'; /* Bold weight */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	margin: 0;
+	font-family: 'Fira Code', monospace;
+}

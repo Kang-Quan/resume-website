@@ -1,32 +1,26 @@
-import { useState } from "react";
-import "./index.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import LandingPage from "./pages/LandingPage";
+import About from "./pages/About";
 
-function App() {
-	const [count, setCount] = useState(0);
-
+const App: React.FC = () => {
+    // we use min-h-screen so that we can continue to expand downwards, then w-screen to ensure it is always 100%
 	return (
-		<div className="bg-gray-800 text-white min-h-screen flex flex-col items-center justify-center">
-			{/* Header Section */}
-			<div className="text-center">
-				<h1 className="text-4xl font-bold text-yellow-400 mb-4">
-					Tailwind CSS Test
-				</h1>
-				<p className="text-gray-300">
-					If you see this styled page, Tailwind CSS is working!
-				</p>
+		<Router basename="/resume-website">
+			<div className="bg-background text-white min-h-screen w-full flex flex-col overflow-hidden">
+				<Navbar />
+				<main className="flex-grow">
+					<Routes>
+						<Route path="/" element={<LandingPage />} />
+						<Route path="/about" element={<About />} />
+					</Routes>
+				</main>
+				<Footer />
 			</div>
-
-			{/* Button Section */}
-			<div className="mt-6">
-				<button
-					className="px-4 py-2 bg-blue-500 text-black rounded-lg shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300"
-					onClick={() => setCount(count + 1)}
-				>
-					Count is {count}
-				</button>
-			</div>
-		</div>
+		</Router>
 	);
-}
+};
 
 export default App;
