@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
 				{/* Logo as Clickable Link */}
 				<Link
 					to="/"
-					className="text-lg font-bold text-blue hover:text-blue transition z-20"
+					className="text-lg font-bold text-gold hover:text-blue transition z-20"
 				>
 					new kq()
 				</Link>
