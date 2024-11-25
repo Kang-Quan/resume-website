@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
 				{/* Logo as Clickable Link */}
 				<Link
 					to="/"
-					className="text-lg font-bold text-blue hover:text-blue-400 transition z-20"
+					className="text-lg font-bold text-blue hover:text-blue transition z-20"
 				>
 					new kq()
 				</Link>
@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
 
 				{/* Navigation Links */}
 				<ul
-					className={`fixed bottom-0 right-0 h-auto bg-transparent transform transition-transform duration-300 ease-in-out ${
+					className={`fixed bottom-0 right-0 h-auto bg-transparent transform transition-transform duration-0 ease-in-out ${
 						isMenuOpen ? "translate-x-0" : "translate-x-full"
 					} md:static md:transform-none md:flex md:space-x-8 flex-col md:flex-row items-end md:items-center space-y-4 md:space-y-0 p-4 z-20 md:z-20`}
 				>
@@ -103,14 +103,14 @@ const Navbar: React.FC = () => {
 				</ul>
 
 				{/* Dim Overlay for when hanburger is clicked */}
-				{isMenuOpen && (
-					<div
-						className={`fixed inset-0 bg-black z-10 transition-opacity duration-300 ${
-							isMenuOpen ? "opacity-70" : "opacity-0"
-						}`}
-						onClick={() => setIsMenuOpen(false)}
-					></div>
-				)}
+				<div
+					className={`fixed inset-0 bg-black z-10 transition-opacity duration-700 ${
+						isMenuOpen
+							? "opacity-70 pointer-events-auto"
+							: "opacity-0 pointer-events-none"
+					}`}
+					onClick={() => setIsMenuOpen(false)}
+				></div>
 			</div>
 		</nav>
 	);
