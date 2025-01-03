@@ -1,31 +1,52 @@
 import React from "react";
+import { motion } from "framer-motion";
+import Timeline from "../animations/Timeline";
+import EducationSection from "../LandingPageSections/EducationSection";
+import IntroductionSection from "../LandingPageSections/IntroductionSection";
+import CurriculumVitaeSection from "../LandingPageSections/CurriculumVitaeSection";
+//import DownloadIcon from "../assets/Downloadicon";
 
 const LandingPage: React.FC = () => {
 	return (
-		<section className="bg-background h-full w-full text-white flex items-center justify-center">
-			<div className="relative flex items-center justify-start h-full w-full pl-8 sm:pl-12 md:pl-16 lg:pl-30p">
-				{/* Vertical Line with Circle */}
-				<div className="relative h-full">
-					{/* Circle */}
-					<div className="absolute bg-gold w-4 h-4 rounded-full top-1/2 left-1/2 transform -translate-x-1/2"></div>
-					{/* Vertical Line */}
-					<div className="bg-gold w-px h-1/2 absolute top-1/2"></div>
-				</div>
+		<div className="relative h-full w-full">
+			{/* Section 1: Introduction */}
+			<IntroductionSection />
 
-				{/* Text Content */}
-				<div className="flex flex-col items-start text-left pl-8">
-					<h1 className="text-5xl text-gold font-bold mb-2 animate-rotateIn">
-						new kq()
-					</h1>
-					<p className="text-gray-400 text-2xl mb-4 opacity-0 animate-slideIn animation-delay-1000">
-						Lee Kang Quan
-					</p>
-					<p className="text-gray-500 text-lg opacity-0 animate-slideIn animation-delay-1000">
-						Just a cs student
-					</p>
+			{/* Section 2: My CV */}
+			<CurriculumVitaeSection />
+
+            {/* Section 3: Internship Experience */}
+			<EducationSection />
+
+			{/* Section 3: Internship Experience
+			<section className="bg-tertiary h-full w-full text-white flex items-center justify-center">
+				<div className="relative flex items-center justify-start h-full w-full pl-8 md:pl-25p lg:pl-30p">
+					<Timeline lineHeight="50%" />
+
+					<motion.div
+						initial={{ opacity: 0, x: -100 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ duration: 1 }}
+						className="flex flex-col items-start text-left pl-8"
+					>
+						<h2 className="text-4xl text-gold font-bold mb-4">
+							Internship Experience
+						</h2>
+						<p className="text-gray-400 text-lg max-w-lg mb-2">
+							<strong>Company:</strong> Tech Solutions Inc.
+						</p>
+						<p className="text-gray-400 text-lg max-w-lg mb-2">
+							<strong>Role:</strong> Software Developer Intern
+						</p>
+						<p className="text-gray-400 text-lg max-w-lg">
+							<strong>Responsibilities:</strong> Developed web
+							applications, worked on bug fixes, and contributed
+							to team projects.
+						</p>
+					</motion.div>
 				</div>
-			</div>
-		</section>
+			</section> */}
+		</div>
 	);
 };
 
