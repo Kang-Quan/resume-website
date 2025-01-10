@@ -18,7 +18,11 @@ export default {
 			padding: {
 				"30p": "30%",
 				"20p": "20%",
-                "25p": "25%",
+				"25p": "25%",
+			},
+			fontSize: {
+				"1.5xl": "1.3rem", // Add custom size
+                "1.2xl": "1.15rem",
 			},
 			animation: {
 				rotateIn: "rotateIn 1s linear", // Custom rotate animation
@@ -60,7 +64,7 @@ export default {
 		},
 	},
 	plugins: [
-        require("tailwindcss-animation-delay"),
-        require('tailwind-scrollbar-hide'),
-    ],
+		require("tailwindcss-animation-delay"),
+		require("tailwind-scrollbar-hide"),
+	],
 };

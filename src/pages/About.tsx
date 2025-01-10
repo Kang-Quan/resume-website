@@ -1,4 +1,5 @@
 import React from 'react';
+import CardFlip from '../animations/CardFlip';
 
 const About: React.FC = () => {
   return (
@@ -8,6 +9,8 @@ const About: React.FC = () => {
         Hi! I'm Kang Quan, a passionate developer with expertise in crafting elegant web solutions.
         I specialize in creating efficient, scalable, and user-friendly applications.
       </p>
+
+      <CardFlip />
     </div>
   );
 };

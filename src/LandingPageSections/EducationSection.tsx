@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Timeline from "../animations/Timeline";
-import EducationIcon from "../assets/EducationIcon";
+//import EducationIcon from "../assets/EducationIcon";
 import {
 	FaUniversity,
 	FaCode,

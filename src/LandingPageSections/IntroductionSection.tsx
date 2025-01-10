@@ -6,7 +6,7 @@ const IntroductionSection: React.FC = () => {
 	return (
 		<section className="bg-background h-full w-full text-white flex items-center justify-center">
 			<div className="relative flex items-center justify-start h-full w-full pl-4 md:pl-25p lg:pl-30p">
-				<Timeline lineHeight="100%" />
+				<Timeline lineHeight="50%" isFullHeight={false}/>
 
 				<motion.div
 					initial={{ opacity: 1 }}

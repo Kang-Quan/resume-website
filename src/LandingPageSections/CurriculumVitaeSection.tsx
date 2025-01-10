@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Timeline from "../animations/Timeline"; // Adjust the path as necessary
-import DownloadIcon from "../assets/DownloadIcon"; // Adjust the path as necessary
+//import DownloadIcon from "../assets/DownloadIcon"; // Adjust the path as necessary
 
 const CurriculumVitaeSection: React.FC = () => {
 	return (

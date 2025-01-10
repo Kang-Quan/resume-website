@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import LandingPage from "./pages/LandingPage";
 import About from "./pages/About";
 import { useLocomotiveScroll } from "./hooks/useLocomotiveScroll";
+import Works from "./pages/Works";
 
 const App: React.FC = () => {
     useLocomotiveScroll();
@@ -21,6 +22,7 @@ const App: React.FC = () => {
 				<main className="flex-1 overflow-y-auto scrollbar-hide">
 					<Routes>
 						<Route path="/" element={<LandingPage />} />
+                        <Route path="/works" element={<Works />} />
 						<Route path="/about" element={<About />} />
 					</Routes>
 				</main>

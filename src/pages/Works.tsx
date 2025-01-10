@@ -9,7 +9,7 @@ import HowIBuiltThisSection from "../LandingPageSections/HowIBuiltThisSection";
 import Divider from "../LandingPageSections/Divider";
 //import DownloadIcon from "../assets/Downloadicon";
 
-const LandingPage: React.FC = () => {
+const Works: React.FC = () => {
 	return (
 		<div className="relative h-full w-full">
 			{/* Section 1: Introduction */}
@@ -38,4 +38,4 @@ const LandingPage: React.FC = () => {
 	);
 };
 
-export default LandingPage;
+export default Works;
