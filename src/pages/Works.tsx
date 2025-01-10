@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 //import { motion } from "framer-motion";
 //import Timeline from "../animations/Timeline";
 import Divider from "../LandingPageSections/Divider";
@@ -8,6 +8,10 @@ import PeerPrepSection from "../WorksPageSection/PeerPrepSection";
 //import DownloadIcon from "../assets/Downloadicon";
 
 const Works: React.FC = () => {
+    useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<div className="relative h-full w-full">
 			{/* Section 1: Introduction */}

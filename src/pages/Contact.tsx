@@ -1,5 +1,5 @@
 import React from 'react';
-import CardFlip from '../animations/ProjectCard';
+//import CardFlip from '../animations/ProjectCard';
 
 const Contact: React.FC = () => {
   return (

@@ -7,25 +7,28 @@ import About from "./pages/About";
 import { useLocomotiveScroll } from "./hooks/useLocomotiveScroll";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./hooks/ScrollToTop";
 
 const App: React.FC = () => {
-    useLocomotiveScroll();
+	useLocomotiveScroll();
 	// we use min-h-screen so that we can continue to expand downwards, then w-screen to ensure it is always 100%
 	return (
 		<Router basename="/resume-website">
-			<div 
-            id="scroll-container"
-            className="bg-background text-white min-h-screen h-screen flex flex-col ">
+			<div
+				id="scroll-container"
+				className="bg-background text-white min-h-screen h-screen flex flex-col "
+			>
 				{/* Navbar */}
 				<Navbar />
 
 				{/* Main Section */}
 				<main className="flex-1 overflow-y-auto scrollbar-hide">
+					<ScrollToTop />
 					<Routes>
 						<Route path="/" element={<LandingPage />} />
-                        <Route path="/works" element={<Works />} />
+						<Route path="/works" element={<Works />} />
 						<Route path="/about" element={<About />} />
-                        <Route path="/contact" element={<Contact />} />
+						<Route path="/contact" element={<Contact />} />
 					</Routes>
 				</main>
 
