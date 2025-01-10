@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage";
 import About from "./pages/About";
 import { useLocomotiveScroll } from "./hooks/useLocomotiveScroll";
 import Works from "./pages/Works";
+import Contact from "./pages/Contact";
 
 const App: React.FC = () => {
     useLocomotiveScroll();
@@ -24,6 +25,7 @@ const App: React.FC = () => {
 						<Route path="/" element={<LandingPage />} />
                         <Route path="/works" element={<Works />} />
 						<Route path="/about" element={<About />} />
+                        <Route path="/contact" element={<Contact />} />
 					</Routes>
 				</main>
 

@@ -29,13 +29,13 @@ const InternshipSection: React.FC = () => {
 						/>
 						<strong>Company:</strong> Azendian Solutions Pte. Ltd.
 					</p>
+					<span className="text-sm md:text-base lg:text-lg text-gray-400 mb-3 pr-[15%] lg:pr-[34%]">
+						A Singapore-based company specializing in AI and data
+						analytics to drive operational efficiency and smart
+						decision-making for a more sustainable Built
+						Environment.
+					</span>
 					<p className="text-sm md:text-base lg:text-lg text-gray-400 mb-3">
-						<p className="text-sm md:text-base lg:text-lg text-gray-400 mb-3 pr-[15%] lg:pr-[34%]">
-							A Singapore-based
-							company specializing in AI and data analytics to
-							drive operational efficiency and smart
-							decision-making for a more sustainable Built Environment.
-						</p>
 						<strong>Role:</strong> Software Developer Intern
 					</p>
 					<p className="text-sm md:text-base lg:text-lg text-gray-400 mb-3 pr-[15%]">
@@ -46,9 +46,9 @@ const InternshipSection: React.FC = () => {
 							alt="Image of dashboard used by our clients"
 							className="w-[80%]  h-full mb-1 mt-3"
 						/>
-						<p className="text-gray-400 text-[0.7rem] mb-2">
+						<span className="text-gray-400 text-[0.7rem] mb-2">
 							Image of dashboard used by our clients
-						</p>
+						</span>
 					</p>
 				</motion.div>
 			</div>

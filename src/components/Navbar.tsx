@@ -34,6 +34,20 @@ const Navbar: React.FC = () => {
 						isMenuOpen ? "translate-x-0" : "translate-x-full"
 					} md:static md:transform-none md:flex md:space-x-8 flex-col md:flex-row items-end md:items-center space-y-4 md:space-y-0 p-4 z-20 md:z-20`}
 				>
+                    <li>
+						<Link
+							to="/works"
+							className="group transition"
+							onClick={() => setIsMenuOpen(false)}
+						>
+							<span className="group-hover:text-white text-white">
+								kq
+							</span>
+							<span className="group-hover:text-blue">
+								.works()
+							</span>
+						</Link>
+					</li>
 					<li>
 						<Link
 							to="/about"
@@ -45,20 +59,6 @@ const Navbar: React.FC = () => {
 							</span>
 							<span className="group-hover:text-blue">
 								.about()
-							</span>
-						</Link>
-					</li>
-					<li>
-						<Link
-							to="/works"
-							className="group transition"
-							onClick={() => setIsMenuOpen(false)}
-						>
-							<span className="group-hover:text-white text-white">
-								kq
-							</span>
-							<span className="group-hover:text-blue">
-								.works()
 							</span>
 						</Link>
 					</li>
@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
 					<div className="flex flex-row space-x-8">
 						<li>
 							<a
-								href="https://linkedin.com"
+								href="https://www.linkedin.com/in/kang-quan-lee-733116259/"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="hover:text-blue transition"
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
 						</li>
 						<li>
 							<a
-								href="https://github.com"
+								href="https://github.com/Kang-Quan"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="hover:text-blue transition"
