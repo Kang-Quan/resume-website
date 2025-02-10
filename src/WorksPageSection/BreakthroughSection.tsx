@@ -30,7 +30,7 @@ const BreakthroughSection: React.FC = () => {
 					initial={{ opacity: 0, x: -100 }}
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ duration: 1 }}
-					className="flex flex-col items-start justify-center text-left pl-4 md:pl-8 w-full h-[90%]"
+					className="flex flex-col items-start justify-center text-left pl-4 md:pl-8 w-full h-[100%]"
 				>
 					<h2 className="text-1.5xl md:text-4xl lg:text-5xl text-gold font-bold mb-5">
 						Breakthrough(

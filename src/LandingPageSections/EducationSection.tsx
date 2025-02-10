@@ -13,6 +13,7 @@ import {
 	FaBrain,
 	FaWifi,
 } from "react-icons/fa"; // Importing the icons
+import { GrCertificate } from "react-icons/gr";
 
 const EducationSection: React.FC = () => {
 	return (
@@ -31,7 +32,7 @@ const EducationSection: React.FC = () => {
 					</h2>
 
 					{/* University Info */}
-					<div className="flex flex-col items-start ">
+					<div className="flex flex-col items-start">
 						<div className="flex flex-row items-start space-x-4">
 							<FaUniversity className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-gold" />
 							<h3 className="text-sm md:text-lg lg:text-2xl font-bold mb-3">
@@ -54,7 +55,7 @@ const EducationSection: React.FC = () => {
 						</p>
 					</div>
 
-					<div className="flex flex-col items-start space-y-2">
+					<div className="flex flex-col items-start space-y-2 mb-5">
 						{/* Software Engineering */}
 						<div className="flex items-center space-x-2">
 							<FaCogs className="w-5 h-5 text-gold" />
@@ -116,6 +117,42 @@ const EducationSection: React.FC = () => {
 							<p className="text-gray-400 text-xs md:text-sm lg:text-base">
 								Operating System
 							</p>
+						</div>
+					</div>
+
+					<div className="flex flex-col items-start space-y-2">
+						{/* Header */}
+						<div className="flex items-center space-x-2">
+							<GrCertificate className="w-5 h-5 text-gold" />
+							<p className="text-gray-400 text-xs md:text-sm lg:text-base">
+								<strong>Certificates Obtained:</strong>
+							</p>
+						</div>
+
+						{/* Software Engineering Certificate */}
+						<div className="flex items-center space-x-2">
+							<FaCogs className="w-5 h-5 text-gold" />
+							<a
+								href="https://example.com/software-engineering-certificate"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-gray-400 text-xs md:text-sm lg:text-base underline hover:text-blue"
+							>
+								Software Engineering (Full Stack)
+							</a>
+						</div>
+
+						{/* Networking Certificate */}
+						<div className="flex items-center space-x-2">
+							<FaNetworkWired className="w-5 h-5 text-gold" />
+							<a
+								href="https://credentials.nus.edu.sg/ea9e0056-d914-4c79-b173-b8a6eca5523d#acc.GoRh1ksi"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-gray-400 text-xs md:text-sm lg:text-base underline hover:text-blue"
+							>
+								Networking
+							</a>
 						</div>
 					</div>
 				</motion.div>

@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 	};
 
 	return (
-		<div className="flex items-center justify-center bg-background rounded-lg shadow-lg w-[300px] md:w-[400px] lg:w-[450px] h-full">
+		<div className="flex items-center justify-center bg-background rounded-lg shadow-lg w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] h-full">
 			<div className="flip-card w-full h-full bg-background rounded-lg">
 				<motion.div
 					className="flip-card-inner relative w-full h-full"
@@ -40,40 +40,41 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 					onAnimationComplete={() => setIsAnimating(false)}
 				>
 					{/* Front Side */}
-					<div className="flip-card-front relative w-full h-full flex items-start justify-center bg-black rounded-lg shadow-lg overflow-hidden">
-						<div className="relative w-full h-[65%] flex items-center justify-center">
+					<div className="flip-card-front relative w-full h-full flex flex-col bg-black rounded-lg shadow-lg overflow-auto">
+						{/* Image Container */}
+						<div className="w-full h-[65%] flex items-center justify-center">
 							{typeof FrontImage === "string" ? (
 								<img
 									src={FrontImage}
 									alt="Front Image"
-									className="w-full h-full object-cover rounded-md object-center"
+									className="w-full h-full rounded-md"
 								/>
 							) : (
 								FrontImage
 							)}
 						</div>
 
-						{/* Overlay Content */}
-						<div className="absolute w-full h-[30%] bg-black rounded-lg top-[65%] flex flex-col items-center justify-center shadow-lg">
-							<h1 className="relative text-sm md:text-lg text-gray-400 bg-black p-2 text-center">
+						{/* Overlay Content (Relative Instead of Absolute) */}
+						<div className="w-full h-[35%] flex flex-col items-center justify-center bg-black rounded-lg shadow-lg pb-4">
+							<h1 className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-400 bg-black p-3 sm:p-4 md:p-5 text-center leading-relaxed">
 								{Description}
 							</h1>
-							<div className="relative flex items-center mt-2 space-x-4 bg-black rounded-lg shadow-lg">
+							<div className="flex items-center mt-2 space-x-4">
 								{/* Render tech stack icons dynamically */}
 								{techStack.map((icon, index) => (
 									<img
 										key={index}
 										src={icon.src}
 										alt={icon.alt}
-										className="w-6 h-6 md:w-8 md:h-8 relative"
+										className="w-6 h-6 md:w-8 md:h-8"
 									/>
 								))}
 							</div>
 						</div>
 
-						{/* Go Next Icon (bottom-right on front side) */}
+						{/* Next Icon (Now Relative and Centered) */}
 						<div
-							className="absolute bottom-4 right-4 cursor-pointer text-white text-2xl"
+							className="mt-auto mb-4 flex justify-end w-full pr-4 text-white text-2xl cursor-pointer"
 							onClick={handleFlip}
 						>
 							<span>&#8594;</span> {/* Right Arrow */}
@@ -81,7 +82,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 					</div>
 
 					{/* Back Side */}
-					<div className="flip-card-back absolute w-full h-full flex flex-col items-center justify-around bg-black rounded-lg shadow-lg p-4 text-white">
+					<div className="flip-card-back absolute w-full h-full flex flex-col bg-black rounded-lg shadow-lg p-4 text-white overflow-auto">
 						{/* Go Back Icon */}
 						<div
 							className="absolute top-4 left-4 cursor-pointer text-2xl"
@@ -90,48 +91,54 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 							<span>&#8592;</span> {/* Left Arrow */}
 						</div>
 
-						{/* Part 1: Explanation of App */}
-						<div className="w-full text-center px-4">
-							<h2 className="text-xl font-bold">
-								App Features:
-							</h2>
-							<div className="text-gray-300 text-sm md:text-base">
-								{Explanation && Explanation.split("\n").map((line, index) => (
-									<p key={index}>{line}</p>
-								))}
+						{/* Content Wrapper to Ensure Proper Layout */}
+						<div className="flex flex-col justify-between h-full w-full">
+							{/* Part 1: Explanation of App */}
+							<div className="w-full flex flex-col justify-center items-center p-4 flex-grow">
+								<h2 className="text-xl font-bold text-center mb-4">
+									App Features:
+								</h2>
+								<div className="text-gray-300 text-sm md:text-base text-left w-full max-w-lg">
+									{Explanation &&
+										Explanation.split("\n").map(
+											(line, index) => (
+												<p key={index}>{line}</p>
+											)
+										)}
+								</div>
 							</div>
-						</div>
 
-						{/* Part 2: Link to Source Code */}
-						<div className="flex items-center space-x-2">
-							<a
-								href={sourcecode}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="flex items-center text-blue-400 hover:underline hover:text-blue"
-							>
-								<img
-									src={GithubIcon}
-									alt="GitHub"
-									className="w-6 h-6 md:w-8 md:h-8 mr-2"
-								/>
-								<span>View Source Code</span>
-							</a>
-						</div>
-
-						{/* Part 3: Optional Link to Try Application */}
-						{link && (
-							<div className="w-full text-center mt-4">
+							{/* Part 2: Link to Source Code (Adjusted to Stay at Bottom) */}
+							<div className="w-full flex justify-center mb-4 pb-4">
 								<a
-									href={link}
+									href={sourcecode}
 									target="_blank"
 									rel="noopener noreferrer"
-									className="hover:underline hover:text-blue"
+									className="flex items-center text-blue-400 hover:underline hover:text-blue"
 								>
-									Try Application Here!!!
+									<img
+										src={GithubIcon}
+										alt="GitHub"
+										className="w-6 h-6 md:w-8 md:h-8 mr-2"
+									/>
+									<span>View Source Code</span>
 								</a>
 							</div>
-						)}
+
+							{/* Part 3: Optional Link to Try Application */}
+							{link && (
+								<div className="w-full text-center pb-4">
+									<a
+										href={link}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="hover:underline hover:text-blue"
+									>
+										Try Application Here!!!
+									</a>
+								</div>
+							)}
+						</div>
 					</div>
 				</motion.div>
 			</div>

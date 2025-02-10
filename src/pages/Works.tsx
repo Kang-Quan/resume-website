@@ -5,6 +5,8 @@ import Divider from "../LandingPageSections/Divider";
 import WorkIntroSection from "../WorksPageSection/IntroductionSection";
 import BreakthroughSection from "../WorksPageSection/BreakthroughSection";
 import PeerPrepSection from "../WorksPageSection/PeerPrepSection";
+import SalesySection from "../WorksPageSection/SalesySection";
+import CaffeineBotSection from "../WorksPageSection/CaffeineBot";
 //import DownloadIcon from "../assets/Downloadicon";
 
 const Works: React.FC = () => {
@@ -30,6 +32,21 @@ const Works: React.FC = () => {
 
 			{/* Section 3: Breakthrough */}
 			<BreakthroughSection />
+
+            <div className="h-1/2">
+                <Divider />
+            </div>
+
+            {/* Section 4: Salesy */}
+			<SalesySection />
+
+            <div className="h-1/2">
+                <Divider />
+            </div>
+
+            {/* Section 5: CaffeineBot */}
+			<CaffeineBotSection />
+
 		</div>
 	);
 };
