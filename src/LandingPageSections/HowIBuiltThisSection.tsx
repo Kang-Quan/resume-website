@@ -87,7 +87,7 @@ const HowIBuiltThisSection: React.FC = () => {
 					</div>
 
 					{/* New section at the end of the page */}
-					<div className="text-center mr-4 h-full w-full">
+					<div className="text-center mr-4 h-full w-full px-4">
 						<p className="text-sm text-gray-400">
 							If you are interested in my other works, go to{" "}
 							<Link to="works" className="group transition">

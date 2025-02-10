@@ -47,6 +47,10 @@ const Works: React.FC = () => {
             {/* Section 5: CaffeineBot */}
 			<CaffeineBotSection />
 
+            <div className="h-[5%]">
+                <Divider />
+            </div>
+
 		</div>
 	);
 };
