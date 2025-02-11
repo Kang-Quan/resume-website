@@ -4,15 +4,9 @@ import Timeline from "../animations/Timeline";
 //import EducationIcon from "../assets/EducationIcon";
 import Tiktokicon from "../assets/tiktoklogo.svg";
 import {
-	FaUniversity,
-	FaCode,
 	FaCogs,
-	FaDatabase,
-	FaLaptopCode,
 	FaNetworkWired,
 	FaRobot,
-	FaBrain,
-	FaWifi,
 	FaLock,
     FaMobile,  // Add the lock icon here
 } from "react-icons/fa";

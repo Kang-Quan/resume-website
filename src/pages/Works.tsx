@@ -37,17 +37,24 @@ const Works: React.FC = () => {
                 <Divider />
             </div>
 
-            {/* Section 4: Salesy */}
+            {/* Section 4: ByeByeBirdie */}
+			<PeerPrepSection />
+
+            <div className="h-1/2">
+                <Divider />
+            </div>
+
+            {/* Section 5: Salesy */}
 			<SalesySection />
 
             <div className="h-1/2">
                 <Divider />
             </div>
 
-            {/* Section 5: CaffeineBot */}
+            {/* Section 6: CaffeineBot */}
 			<CaffeineBotSection />
 
-            <div className="h-[5%]">
+            <div className="h-1/2">
                 <Divider />
             </div>
 

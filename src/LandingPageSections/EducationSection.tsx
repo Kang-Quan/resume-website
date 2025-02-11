@@ -13,7 +13,6 @@ import {
 	FaBrain,
 	FaWifi,
 } from "react-icons/fa"; // Importing the icons
-import { GrCertificate } from "react-icons/gr";
 
 const EducationSection: React.FC = () => {
 	return (
