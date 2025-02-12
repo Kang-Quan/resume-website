@@ -8,6 +8,7 @@ import PeerPrepSection from "../WorksPageSection/PeerPrepSection";
 import SalesySection from "../WorksPageSection/SalesySection";
 import CaffeineBotSection from "../WorksPageSection/CaffeineBot";
 import ByeByeBirdieSection from "../WorksPageSection/ByeByeBirdieSection";
+import ToAboutMeSection from "../WorksPageSection/ToAboutMeSection";
 //import DownloadIcon from "../assets/Downloadicon";
 
 const Works: React.FC = () => {
@@ -54,11 +55,8 @@ const Works: React.FC = () => {
 
             {/* Section 6: CaffeineBot */}
 			<CaffeineBotSection />
-
-            <div className="h-1/2">
-                <Divider />
-            </div>
-
+            
+            <ToAboutMeSection />
 		</div>
 	);
 };

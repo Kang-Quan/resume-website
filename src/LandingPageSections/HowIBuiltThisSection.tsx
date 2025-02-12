@@ -90,7 +90,7 @@ const HowIBuiltThisSection: React.FC = () => {
 					<div className="text-center mr-4 h-full w-full px-4">
 						<p className="text-sm text-gray-400">
 							If you are interested in my other works, go to{" "}
-							<Link to="works" className="group transition">
+							<Link to="/works" className="group transition">
 								<span className="group-hover:text-white text-white">
 									kq
 								</span>
