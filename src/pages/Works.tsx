@@ -7,6 +7,7 @@ import BreakthroughSection from "../WorksPageSection/BreakthroughSection";
 import PeerPrepSection from "../WorksPageSection/PeerPrepSection";
 import SalesySection from "../WorksPageSection/SalesySection";
 import CaffeineBotSection from "../WorksPageSection/CaffeineBot";
+import ByeByeBirdieSection from "../WorksPageSection/ByeByeBirdieSection";
 //import DownloadIcon from "../assets/Downloadicon";
 
 const Works: React.FC = () => {
@@ -38,7 +39,7 @@ const Works: React.FC = () => {
             </div>
 
             {/* Section 4: ByeByeBirdie */}
-			<PeerPrepSection />
+			<ByeByeBirdieSection />
 
             <div className="h-1/2">
                 <Divider />

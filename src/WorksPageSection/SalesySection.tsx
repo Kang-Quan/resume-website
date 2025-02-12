@@ -10,7 +10,7 @@ const SalesySection: React.FC = () => {
 		"Salesy is an all-in-one tool for NUS canteen vendors whom want to keep track of their tasks, inventory and suppliers.";
 
 	const Explaination =
-		"• Add and edit supplier contact information.\n• Create, customize and check off tasks.\n • View your upcoming tasks given by your own deadline.\n• Update your inventory and keep track of stock changes.\n• Be well aware when your stock is healthy, average or low.\n• Search for suppliers in our comprehensive data bank.";
+		"📇 Manage Suppliers: Add & edit supplier contact info\n✅ Task Management: Create, customize & check off tasks\n⏳ Stay on Track: View upcoming tasks by deadline\n📦 Inventory Updates: Track stock changes in real-time\n🚦 Stock Alerts: Monitor stock health (healthy, average, low)\n🔍 Supplier Search: Find suppliers in a comprehensive data bank";
 
     //const link = "test"
 
@@ -25,7 +25,7 @@ const SalesySection: React.FC = () => {
 					initial={{ opacity: 0, x: -100 }}
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ duration: 1 }}
-					className="flex flex-col items-start justify-center text-left pl-4 md:pl-8 w-full h-[90%]"
+					className="flex flex-col items-start justify-center text-left pl-4 md:pl-8 w-full h-[100%]"
 				>
 					<h2 className="text-1.5xl md:text-4xl lg:text-5xl text-gold font-bold mb-5">
                         Salesy(

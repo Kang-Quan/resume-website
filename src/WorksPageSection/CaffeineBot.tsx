@@ -7,10 +7,10 @@ import Java from "../assets/java.svg";
 
 const CaffeineBotSection: React.FC = () => {
 	const Description =
-		"CaffeineBot is a desktop chatbot that will help you remember your tasks so that you can leave the remembering to us and relax with a good cup of coffee.";
+		"CaffeineBot is a chatbot that will help you remember your tasks so that you can relax with a good cup of coffee.";
 
 	const Explaination =
-		"• Designed a desktop to-do list application tailored for quick typists\n• The backend was developed in Java, using Object-Oriented Programming (OOP) paradigm and incorporating the Command Design Pattern.\n• The graphical user interface (GUI) has been crafted using JavaFX in conjunction with FXML for a robust and visually appealing user experience.\n• Used Gradle build tool to facilitate with Junit testing and releasing the jar file. ";
+		"💻 Fast & Efficient: Designed for quick typists\n🖥️ Java & OOP: Built with Object-Oriented Programming\n🔄 Command Pattern: Improves modularity & reusability\n📌 JavaFX + FXML: Creates a visually appealing, responsive UI\n🛠️ Gradle + JUnit: Automates builds & testing\n📦 Jar Release: Easy deployment for users";
 
     //const link = "test"
 
@@ -25,7 +25,7 @@ const CaffeineBotSection: React.FC = () => {
 					initial={{ opacity: 0, x: -100 }}
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ duration: 1 }}
-					className="flex flex-col items-start justify-center text-left pl-4 md:pl-8 w-full h-[90%]"
+					className="flex flex-col items-start justify-center text-left pl-4 md:pl-8 w-full h-[100%]"
 				>
 					<h2 className="text-1.5xl md:text-4xl lg:text-5xl text-gold font-bold mb-5">
                         CaffeineBot(

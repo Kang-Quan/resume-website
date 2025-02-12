@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 	};
 
 	return (
-		<div className="flex items-center justify-center bg-background rounded-lg shadow-lg w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] h-full">
+		<div className="flex items-center justify-center bg-background rounded-lg shadow-lg w-[90%] sm:w-[80%] md:w-[67%] lg:w-[57%] xl:w-[47%] h-[85%]">
 			<div className="flip-card w-full h-full bg-background rounded-lg">
 				<motion.div
 					className="flip-card-inner relative w-full h-full"
@@ -40,9 +40,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 					onAnimationComplete={() => setIsAnimating(false)}
 				>
 					{/* Front Side */}
-					<div className="flip-card-front relative w-full h-full flex flex-col bg-black rounded-lg shadow-lg overflow-auto">
+					<div className="flip-card-front relative w-full h-full flex flex-col bg-black rounded-lg shadow-lg overflow-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-900 scrollable-container">
+
 						{/* Image Container */}
-						<div className="w-full h-[65%] flex items-center justify-center">
+						<div className="w-full h-[60%] flex items-center justify-center">
 							{typeof FrontImage === "string" ? (
 								<img
 									src={FrontImage}
@@ -55,7 +56,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 						</div>
 
 						{/* Overlay Content (Relative Instead of Absolute) */}
-						<div className="w-full h-[35%] flex flex-col items-center justify-center bg-black rounded-lg shadow-lg pb-4">
+						<div className="w-full h-[40%] flex flex-col items-center justify-center bg-black rounded-lg shadow-lg pb-4">
 							<h1 className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-400 bg-black p-3 sm:p-4 md:p-5 text-center leading-relaxed">
 								{Description}
 							</h1>
@@ -82,7 +83,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 					</div>
 
 					{/* Back Side */}
-					<div className="flip-card-back absolute w-full h-full flex flex-col bg-black rounded-lg shadow-lg p-4 text-white overflow-auto">
+					<div className="flip-card-back absolute w-full h-full flex flex-col bg-black rounded-lg shadow-lg p-4 text-white overflow-auto scrollable-container">
 						{/* Go Back Icon */}
 						<div
 							className="absolute top-4 left-4 cursor-pointer text-2xl"

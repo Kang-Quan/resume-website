@@ -2,25 +2,25 @@ import React from "react";
 import { motion } from "framer-motion";
 import Timeline from "../animations/Timeline";
 import ReactIcon from "../assets/react.svg";
-import MongoDBIcon from "../assets/mongodb.svg";
-import Rabbitmq from "../assets/rabbitmq.svg";
+import VercelLogo from "../assets/vercellogo.png";
+import PythonLogo from "../assets/pythonlogo.jpg";
 import TypeScriptIcon from "../assets/typescript.svg";
-import PeerPrepImage from "../assets/peerprep.png";
-import BackendSever from "../assets/backendsever.png"
+import IOTimage from "../assets/IOTimage.jpg";
+import ArduinoLogo from "../assets/arduinologo.png"
 import ProjectCard from "../animations/ProjectCard";
 import Postgresql from "../assets/postgresql.svg";
 import Docker from "../assets/docker.svg";
 
-const PeerPrepSection: React.FC = () => {
+const ByeByeBirdieSection: React.FC = () => {
 	const Description =
-		"A Full-Stack application that allow users to collaborate and solve coding problems real-time";
+		"A smart solution for cleaner tray returns and bird deterrence in hawker centres and coffeeshops";
 
 	const Explaination =
-		"🔒 Authenticate with email/password, Google, Twitter & Github \n👀 View questions curated by our team \n💬 Chat with other users \n💻 Collaborate with other users with a live code-editor \n🔗 Match with other users based on question difficulty \n✍️ Customize personal profile";
+		"👀 System detects movement \n📷 Camera captures real-time images \n🔍 CV model identifies number of birds \n📢 Buzzer activates to deter birds \n🚪 Curtain closes to keep birds out \n🚨 Instant alert via telegram bot \n📈 Webpage to view trends & long-term analytics \n☁️ Cloud storage/server for data storage and analytics";
 
     //const link = "test"
 
-    const sourcecode = "https://github.com/CS3219-AY2324S1/ay2324s1-course-assessment-g51"
+    const sourcecode = "https://github.com/Kang-Quan/CS3237-Project-G16"
 
 	return (
 		<section className="bg-background h-full w-full text-white flex items-center justify-center">
@@ -34,24 +34,24 @@ const PeerPrepSection: React.FC = () => {
 					className="flex flex-col items-start justify-center text-left pl-4 md:pl-8 w-full h-[100%]"
 				>
 					<h2 className="text-1.5xl md:text-4xl lg:text-5xl text-gold font-bold mb-5">
-						PeerPrep(
-						<span className="text-gray-400">"Nov 2023"</span>)
+						ByeByeBirdie(
+						<span className="text-gray-400">"Nov 2024"</span>)
 					</h2>
 
 					<ProjectCard
-						FrontImage={PeerPrepImage}
+						FrontImage={IOTimage}
                         sourcecode={sourcecode}
 						Description={Description}
 						techStack={[
 							{ src: ReactIcon, alt: "React" },
 							{ src: TypeScriptIcon, alt: "TypeScript" },
 							{
-								src: BackendSever,
-								alt: "Express & Node",
+								src: ArduinoLogo,
+								alt: "Arduino",
 							},
                             {
-								src: MongoDBIcon,
-								alt: "MongoDB",
+								src: VercelLogo,
+								alt: "Vercel",
 							},
                             {
 								src: Postgresql,
@@ -62,8 +62,8 @@ const PeerPrepSection: React.FC = () => {
 								alt: "Docker",
 							},
                             {
-								src: Rabbitmq,
-								alt: "Rabbitmq",
+								src: PythonLogo,
+								alt: "Python",
 							},
 						]}
 						Explanation={Explaination}
@@ -74,4 +74,4 @@ const PeerPrepSection: React.FC = () => {
 	);
 };
 
-export default PeerPrepSection;
+export default ByeByeBirdieSection;

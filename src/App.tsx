@@ -16,7 +16,7 @@ const App: React.FC = () => {
 		<Router basename="/resume-website">
 			<div
 				id="scroll-container"
-				className="bg-background text-white min-h-screen h-screen flex flex-col "
+				className="bg-background text-white min-h-screen h-screen flex flex-col scrollable-container"
 			>
 				{/* Navbar */}
 				<Navbar />

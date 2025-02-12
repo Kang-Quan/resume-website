@@ -36,3 +36,22 @@ body {
 		background-position: 100% 100%;
 	}
 }
+
+/* Apply styles only for WebKit browsers */
+.scrollable-container::-webkit-scrollbar {
+	width: 8px;
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+	background: #111;
+	border-radius: 10px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+	background: #555;
+	border-radius: 10px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+	background: #888;
+}
