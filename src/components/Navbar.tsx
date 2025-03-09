@@ -10,19 +10,19 @@ const Navbar: React.FC = () => {
 	};
 
 	return (
-		<nav className="bg-background text-white py-4 z-20">
+		<nav className="bg-background text-white py-4 z-30">
 			<div className="container mx-auto flex justify-between items-center px-3">
 				{/* Logo as Clickable Link */}
 				<Link
 					to="/"
-					className="text-lg font-bold text-gold hover:text-blue transition z-20"
+					className="text-lg font-bold text-gold hover:text-blue transition z-30"
 				>
 					new kq()
 				</Link>
 
 				{/* Hamburger Icon */}
 				<button
-					className="block md:hidden text-blue z-20"
+					className="block md:hidden text-blue z-30"
 					onClick={toggleMenu}
 				>
 					{isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
 				<ul
 					className={`fixed bottom-0 right-0 h-auto bg-transparent transform transition-transform duration-0 ease-in-out ${
 						isMenuOpen ? "translate-x-0" : "translate-x-full"
-					} md:static md:transform-none md:flex md:space-x-8 flex-col md:flex-row items-end md:items-center space-y-4 md:space-y-0 p-4 z-20 md:z-20`}
+					} md:static md:transform-none md:flex md:space-x-8 flex-col md:flex-row items-end md:items-center space-y-4 md:space-y-0 p-4 z-30 md:z-30`}
 				>
                     <li>
 						<Link
@@ -104,7 +104,7 @@ const Navbar: React.FC = () => {
 
 				{/* Dim Overlay for when hanburger is clicked */}
 				<div
-					className={`fixed inset-0 bg-black z-10 transition-opacity duration-700 ${
+					className={`fixed inset-0 bg-black z-20 transition-opacity duration-700 ${
 						isMenuOpen
 							? "opacity-70 pointer-events-auto"
 							: "opacity-0 pointer-events-none"
