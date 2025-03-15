@@ -1,5 +1,5 @@
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
+//import { Typewriter } from "react-simple-typewriter";
 
 interface MusicCompetitionSlideProps {
   title: string;

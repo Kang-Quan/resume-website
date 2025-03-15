@@ -5,7 +5,7 @@ import WelcomeSlide from "../AboutMePages/WelcomeSlide";
 import NormalText from "../AboutMePages/NormalText";
 import MusicCompetitionSlide from "../AboutMePages/MusicCompetitionSlide";
 import competition1 from "../assets/competition1.jpg";
-import competition2 from "../assets/competition2.jpg";
+//import competition2 from "../assets/competition2.jpg";
 
 // Example slides data
 const slides = [
