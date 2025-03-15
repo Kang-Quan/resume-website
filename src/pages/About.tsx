@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Typewriter } from "react-simple-typewriter";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import WelcomeSlide from "../AboutMePages/WelcomeSlide";
-import TechStackSlide from "../AboutMePages/TechStackSlide";
-import ProjectsSlide from "../AboutMePages/ProjectsSlide";
+import NormalText from "../AboutMePages/NormalText";
+import MusicCompetitionSlide from "../AboutMePages/MusicCompetitionSlide";
+import competition1 from "../assets/competition1.jpg";
+import competition2 from "../assets/competition2.jpg";
 
 // Example slides data
 const slides = [
@@ -14,12 +15,15 @@ const slides = [
 			"Hi! I'm Kang Quan – A passionate developer and Chinese Orchestra enthusiast, crafting code by day and music by night.",
 	},
 	{
-		title: "💻 Tech Stack",
-		content: "I work with React, Tailwind CSS, and Framer Motion.",
+		title: "🌙 Night Highlights",
+		content:
+			"You have seen my works I did in my day, now I am going to show you some highlights of my works at night.",
 	},
 	{
-		title: "🚀 Projects",
-		content: "I build web apps, AI bots, and automation tools.",
+		title: "🏆 Singapore Chinese Music Competition",
+		content:
+			"We won 1st for the Singapore Chinese Music Competition (ensemble B), showcasing my passion in music.",
+		images: [competition1],
 	},
 ];
 
@@ -67,14 +71,15 @@ const About: React.FC = () => {
 								content={slides[currentSlide].content}
 							/>
 						) : currentSlide === 1 ? (
-							<TechStackSlide
+							<NormalText
 								title={slides[currentSlide].title}
 								content={slides[currentSlide].content}
 							/>
 						) : (
-							<ProjectsSlide
+							<MusicCompetitionSlide
 								title={slides[currentSlide].title}
 								content={slides[currentSlide].content}
+								images={slides[currentSlide].images ?? []}
 							/>
 						)}
 					</motion.div>
