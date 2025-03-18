@@ -13,7 +13,7 @@ const App: React.FC = () => {
 	useLocomotiveScroll();
 	// we use min-h-screen so that we can continue to expand downwards, then w-screen to ensure it is always 100%
 	return (
-		<Router basename="/resume-website">
+		<Router>
 			<div
 				id="scroll-container"
 				className="bg-background text-white min-h-screen h-screen flex flex-col scrollable-container"
