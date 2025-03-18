@@ -12,7 +12,7 @@ const WelcomeSlide: React.FC<WelcomeSlideProps> = ({ title, content }) => {
 		<div className="flex flex-row items-center justify-between p-2 lg:p-10 w-full h-full">
 			{/* Left Column: Picture in a circular frame */}
 			<div className="w-1/2 flex justify-center items-center">
-				<div className="relative w-[95%] md:w-[75%] lg:w-[70%] aspect-square border-4 border-gold rounded-full overflow-hidden bg-[#e1dfdd] mr-2">
+				<div className="relative w-[95%] md:w-[75%] lg:w-[70%] aspect-square border-4 border-gold rounded-full overflow-hidden bg-[#e1dfdd] mr-3">
 					<img
 						src={myPicture}
 						alt="Kang Quan"
@@ -22,15 +22,16 @@ const WelcomeSlide: React.FC<WelcomeSlideProps> = ({ title, content }) => {
 			</div>
 			{/* Right Column: Text */}
 			<div className="w-1/2 flex flex-col justify-center text-left">
-				<h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-gold">
+				<h2 className="text-base sm:text-lg md:text-2xl lg:text-3xl font-bold text-gold">
 					{title}
 				</h2>
-				<p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 mt-2 ml-2">
+				<p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 mt-2">
 					<Typewriter
 						words={[content]}
 						loop={1}
-						typeSpeed={30}
-						delaySpeed={1000}
+						typeSpeed={40}
+						delaySpeed={1500}
+                        cursor
 					/>
 				</p>
 			</div>

@@ -3,11 +3,37 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import WelcomeSlide from "../AboutMePages/WelcomeSlide";
 import NormalText from "../AboutMePages/NormalText";
-import MusicCompetitionSlide from "../AboutMePages/MusicCompetitionSlide";
+import Collage from "../AboutMePages/Collage";
 import competition1 from "../assets/competition1.jpg";
-//import competition2 from "../assets/competition2.jpg";
+import competition2 from "../assets/competition2.jpg";
+import competition3 from "../assets/competition3.jpg";
+import competition4 from "../assets/competition4.jpg";
+import competition5 from "../assets/competition5.jpg";
+import competition6 from "../assets/competition6.jpg";
+import competition7 from "../assets/competition7.jpg";
+import competition8 from "../assets/competition8.jpg";
 
-// Example slides data
+import experience1 from "../assets/experience1.jpg";
+import experience2 from "../assets/experience2.jpg";
+import experience3 from "../assets/experience3.jpg";
+import experience4 from "../assets/experience4.jpg";
+import experience5 from "../assets/experience5.jpg";
+import experience6 from "../assets/experience6.jpg";
+import experience7 from "../assets/experience7.jpg";
+import experience8 from "../assets/experience8.jpg";
+import experience9 from "../assets/experience9.jpg";
+import experience10 from "../assets/experience10.jpg";
+import experience11 from "../assets/experience11.jpg";
+import experience12 from "../assets/experience12.jpg";
+import experience13 from "../assets/experience13.jpg";
+import experience14 from "../assets/experience14.jpg";
+import experience15 from "../assets/experience15.jpg";
+import experience16 from "../assets/experience16.jpg";
+import experience17 from "../assets/experience17.jpg";
+import experience18 from "../assets/experience18.jpg";
+import experience19 from "../assets/experience19.jpg";
+
+
 const slides = [
 	{
 		title: "👋 Welcome!",
@@ -22,8 +48,52 @@ const slides = [
 	{
 		title: "🏆 Singapore Chinese Music Competition",
 		content:
-			"We won 1st for the Singapore Chinese Music Competition (ensemble B), showcasing my passion in music.",
-		images: [competition1],
+			"As a member of Reverberance Youth, I participated in the Singapore Chinese Music Competition (Ensemble B), where we won 1st place, reflecting my passion for music.",
+	},
+	{
+		photos: [
+			competition1,
+			competition2,
+			competition3,
+			competition4,
+			competition5,
+			competition6,
+			competition7,
+			competition8,
+		],
+	},
+	{
+		title: "🌍 Exploring & Connecting",
+		content:
+			"I enjoy traveling, trying new foods, and making new friends, embracing new experiences along the way.",
+	},
+	{
+		photos: [
+			experience1,
+			experience2,
+			experience3,
+			experience4,
+			experience5,
+			experience6,
+			experience7,
+			experience8,
+            experience9,
+            experience10,
+            experience11,
+            experience12,
+            experience13,
+            experience14,
+            experience15,
+            experience16,
+            experience17,
+            experience18,
+            experience19,
+		],
+	},
+	{
+		title: "📩 Let's Connect!",
+		content:
+			"If you're interested in my work, feel free to reach out to me at my contact page.",
 	},
 ];
 
@@ -67,19 +137,36 @@ const About: React.FC = () => {
 					>
 						{currentSlide === 0 ? (
 							<WelcomeSlide
-								title={slides[currentSlide].title}
-								content={slides[currentSlide].content}
+								title={slides[currentSlide].title ?? ""}
+								content={slides[currentSlide].content ?? ""}
 							/>
 						) : currentSlide === 1 ? (
 							<NormalText
-								title={slides[currentSlide].title}
-								content={slides[currentSlide].content}
+								title={slides[currentSlide].title ?? ""}
+								content={slides[currentSlide].content ?? ""}
+							/>
+						) : currentSlide === 2 ? (
+							<NormalText
+								title={slides[currentSlide].title ?? ""}
+								content={slides[currentSlide].content ?? ""}
+							/>
+						) : currentSlide === 3 ? (
+							<Collage
+								photos={slides[currentSlide].photos ?? []}
+							/>
+						) : currentSlide === 4 ? (
+							<NormalText
+								title={slides[currentSlide].title ?? ""}
+								content={slides[currentSlide].content ?? ""}
+							/>
+						) : currentSlide === 5 ? (
+							<Collage
+								photos={slides[currentSlide].photos ?? []}
 							/>
 						) : (
-							<MusicCompetitionSlide
-								title={slides[currentSlide].title}
-								content={slides[currentSlide].content}
-								images={slides[currentSlide].images ?? []}
+							<NormalText
+								title={slides[currentSlide].title ?? ""}
+								content={slides[currentSlide].content ?? ""}
 							/>
 						)}
 					</motion.div>
