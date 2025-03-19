@@ -12,3 +12,5 @@
 - **Styling:** Tailwind CSS 
 - **Backend:** Node.js / Express / TelegramBot (To receive messages from contact me page)
 - **Hosting & Deployment:** Vercel / GitHub Pages  
+
+Check it out here: **[kang-quan.github.io/resume-website/](https://kang-quan.github.io/resume-website/)**  
