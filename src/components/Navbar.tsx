@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
 					<div className="flex flex-row space-x-8">
 						<li>
 							<a
-								href="https://www.linkedin.com/in/kang-quan-lee-733116259/"
+								href="https://www.linkedin.com/in/lee-kang-quan/"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="hover:text-blue transition"

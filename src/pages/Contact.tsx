@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
 					<FaEnvelope />
 				</a>
 				<a
-					href="https://www.linkedin.com/in/kang-quan-lee-733116259/"
+					href="https://www.linkedin.com/in/lee-kang-quan/"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="text-gray-400 hover:text-blue transition text-2xl sm:text-3xl"
