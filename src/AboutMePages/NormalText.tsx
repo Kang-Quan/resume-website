@@ -17,7 +17,7 @@ const NormalText: React.FC<NormalTextProps> = ({ title, content }) => {
 					<Typewriter
 						words={[content]}
 						loop={1}
-						typeSpeed={40}
+						typeSpeed={25}
 						deleteSpeed={30}
 						delaySpeed={1500}
 						cursor

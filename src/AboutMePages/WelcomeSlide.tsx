@@ -29,7 +29,7 @@ const WelcomeSlide: React.FC<WelcomeSlideProps> = ({ title, content }) => {
 					<Typewriter
 						words={[content]}
 						loop={1}
-						typeSpeed={40}
+						typeSpeed={25}
 						delaySpeed={1500}
                         cursor
 					/>
