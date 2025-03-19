@@ -36,7 +36,7 @@ const InternshipSection: React.FC = () => {
 						Environment.
 					</span>
 					<p className="text-sm md:text-base lg:text-lg text-gray-400 mb-3">
-						<strong>Role:</strong> Software Developer Intern
+						<strong>Role:</strong> Full Stack Software Developer Intern
 					</p>
 					<p className="text-sm md:text-base lg:text-lg text-gray-400 mb-3 pr-[15%]">
 						<strong>Responsibilities:</strong> Developed Real Time
